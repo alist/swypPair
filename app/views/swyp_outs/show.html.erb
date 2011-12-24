@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>When:</b>
+  <%= @swyp_out.when %>
+</p>
+
+<p>
+  <b>Where:</b>
+  <%= @swyp_out.where %>
+</p>
+
+<p>
+  <b>Velocity:</b>
+  <%= @swyp_out.velocity %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @swyp_out.address %>
+</p>
+
+<p>
+  <b>Port:</b>
+  <%= @swyp_out.port %>
+</p>
+
+<p>
+  <b>Id:</b>
+  <%= @swyp_out.id %>
+</p>
+
+<p>
+  <b>Publickey:</b>
+  <%= @swyp_out.publicKey %>
+</p>
+
+
+<%= link_to 'Edit', edit_swyp_out_path(@swyp_out) %> |
+<%= link_to 'Back', swyp_outs_path %>

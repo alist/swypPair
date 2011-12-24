@@ -1,0 +1,45 @@
+<%= form_for(@swyp_out) do |f| %>
+  <% if @swyp_out.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@swyp_out.errors.count, "error") %> prohibited this swyp_out from being saved:</h2>
+
+      <ul>
+      <% @swyp_out.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :when %><br />
+    <%= f.datetime_select :when %>
+  </div>
+  <div class="field">
+    <%= f.label :where %><br />
+    <%= f.text_field :where %>
+  </div>
+  <div class="field">
+    <%= f.label :velocity %><br />
+    <%= f.number_field :velocity %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :port %><br />
+    <%= f.number_field :port %>
+  </div>
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :publicKey %><br />
+    <%= f.text_field :publicKey %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

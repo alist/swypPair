@@ -1,0 +1,2 @@
+module SwypOutsHelper
+end

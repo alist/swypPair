@@ -1,0 +1,35 @@
+<h1>Listing swyp_outs</h1>
+
+<table>
+  <tr>
+    <th>When</th>
+    <th>Where</th>
+    <th>Velocity</th>
+    <th>Address</th>
+    <th>Port</th>
+    <th>Id</th>
+    <th>Publickey</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @swyp_outs.each do |swyp_out| %>
+  <tr>
+    <td><%= swyp_out.when %></td>
+    <td><%= swyp_out.where %></td>
+    <td><%= swyp_out.velocity %></td>
+    <td><%= swyp_out.address %></td>
+    <td><%= swyp_out.port %></td>
+    <td><%= swyp_out.id %></td>
+    <td><%= swyp_out.publicKey %></td>
+    <td><%= link_to 'Show', swyp_out %></td>
+    <td><%= link_to 'Edit', edit_swyp_out_path(swyp_out) %></td>
+    <td><%= link_to 'Destroy', swyp_out, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Swyp out', new_swyp_out_path %>
