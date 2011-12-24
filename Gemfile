@@ -32,7 +32,7 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development do
-  gem 'rspec-rails', '2.6.1'
+#  gem 'rspec-rails', '2.6.1'
   gem 'annotate', '2.4.0'
   gem 'sqlite3'
 end
