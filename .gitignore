@@ -1,3 +1,4 @@
 *.sqlite3
 test.log
 development.log
+./tmp/
