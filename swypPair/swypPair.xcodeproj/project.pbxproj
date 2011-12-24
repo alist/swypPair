@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		79B7A39C14A67003005738E2 /* rails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rails.png; sourceTree = "<group>"; };
+		79B7A39E14A67003005738E2 /* application.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
+		79B7A39F14A67003005738E2 /* swyp_outs.js.coffee */ = {isa = PBXFileReference; lastKnownFileType = text; path = swyp_outs.js.coffee; sourceTree = "<group>"; };
+		79B7A3A114A67003005738E2 /* application.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = application.css; sourceTree = "<group>"; };
+		79B7A3A214A67003005738E2 /* scaffolds.css.scss */ = {isa = PBXFileReference; lastKnownFileType = text; path = scaffolds.css.scss; sourceTree = "<group>"; };
+		79B7A3A314A67003005738E2 /* swyp_outs.css.scss */ = {isa = PBXFileReference; lastKnownFileType = text; path = swyp_outs.css.scss; sourceTree = "<group>"; };
+		79B7A3A514A67003005738E2 /* application_controller.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = application_controller.rb; sourceTree = "<group>"; };
+		79B7A3A614A67003005738E2 /* swyp_outs_controller.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = swyp_outs_controller.rb; sourceTree = "<group>"; };
+		79B7A3A814A67003005738E2 /* application_helper.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = application_helper.rb; sourceTree = "<group>"; };
+		79B7A3A914A67003005738E2 /* swyp_outs_helper.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = swyp_outs_helper.rb; sourceTree = "<group>"; };
+		79B7A3AB14A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A3AD14A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A3AE14A67003005738E2 /* swyp_out.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = swyp_out.rb; sourceTree = "<group>"; };
+		79B7A3B114A67003005738E2 /* application.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; path = application.html.erb; sourceTree = "<group>"; };
+		79B7A3B314A67003005738E2 /* _form.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; path = _form.html.erb; sourceTree = "<group>"; };
+		79B7A3B414A67003005738E2 /* edit.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; path = edit.html.erb; sourceTree = "<group>"; };
+		79B7A3B514A67003005738E2 /* index.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.html.erb; sourceTree = "<group>"; };
+		79B7A3B614A67003005738E2 /* new.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; path = new.html.erb; sourceTree = "<group>"; };
+		79B7A3B714A67003005738E2 /* show.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; path = show.html.erb; sourceTree = "<group>"; };
+		79B7A3B914A67003005738E2 /* application.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = application.rb; sourceTree = "<group>"; };
+		79B7A3BA14A67003005738E2 /* boot.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = boot.rb; sourceTree = "<group>"; };
+		79B7A3BB14A67003005738E2 /* database.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = database.yml; sourceTree = "<group>"; };
+		79B7A3BC14A67003005738E2 /* environment.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = environment.rb; sourceTree = "<group>"; };
+		79B7A3BE14A67003005738E2 /* development.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = development.rb; sourceTree = "<group>"; };
+		79B7A3BF14A67003005738E2 /* production.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = production.rb; sourceTree = "<group>"; };
+		79B7A3C014A67003005738E2 /* test.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = test.rb; sourceTree = "<group>"; };
+		79B7A3C214A67003005738E2 /* backtrace_silencers.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = backtrace_silencers.rb; sourceTree = "<group>"; };
+		79B7A3C314A67003005738E2 /* inflections.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = inflections.rb; sourceTree = "<group>"; };
+		79B7A3C414A67003005738E2 /* mime_types.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = mime_types.rb; sourceTree = "<group>"; };
+		79B7A3C514A67003005738E2 /* secret_token.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = secret_token.rb; sourceTree = "<group>"; };
+		79B7A3C614A67003005738E2 /* session_store.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = session_store.rb; sourceTree = "<group>"; };
+		79B7A3C714A67003005738E2 /* wrap_parameters.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = wrap_parameters.rb; sourceTree = "<group>"; };
+		79B7A3C914A67003005738E2 /* en.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = en.yml; sourceTree = "<group>"; };
+		79B7A3CA14A67003005738E2 /* routes.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = routes.rb; sourceTree = "<group>"; };
+		79B7A3CB14A67003005738E2 /* config.ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.ru; path = ../config.ru; sourceTree = "<group>"; };
+		79B7A3CD14A67003005738E2 /* development.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = development.sqlite3; sourceTree = "<group>"; };
+		79B7A3CF14A67003005738E2 /* 20111224175026_create_swyp_outs.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = 20111224175026_create_swyp_outs.rb; sourceTree = "<group>"; };
+		79B7A3D014A67003005738E2 /* schema.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = schema.rb; sourceTree = "<group>"; };
+		79B7A3D114A67003005738E2 /* seeds.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = seeds.rb; sourceTree = "<group>"; };
+		79B7A3D214A67003005738E2 /* test.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.sqlite3; sourceTree = "<group>"; };
+		79B7A3D414A67003005738E2 /* README_FOR_APP */ = {isa = PBXFileReference; lastKnownFileType = text; path = README_FOR_APP; sourceTree = "<group>"; };
+		79B7A3D514A67003005738E2 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
+		79B7A3D614A67003005738E2 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile.lock; path = ../Gemfile.lock; sourceTree = "<group>"; };
+		79B7A3D914A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A3DB14A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A3DD14A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A3DE14A67003005738E2 /* production.log */ = {isa = PBXFileReference; lastKnownFileType = text; path = production.log; sourceTree = "<group>"; };
+		79B7A3DF14A67003005738E2 /* test.log */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.log; sourceTree = "<group>"; };
+		79B7A3E114A67003005738E2 /* 404.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
+		79B7A3E214A67003005738E2 /* 422.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = 422.html; sourceTree = "<group>"; };
+		79B7A3E314A67003005738E2 /* 500.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = 500.html; sourceTree = "<group>"; };
+		79B7A3E514A67003005738E2 /* application-00960e5186894b532975562d59176a6a.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "application-00960e5186894b532975562d59176a6a.css"; sourceTree = "<group>"; };
+		79B7A3E614A67003005738E2 /* application-00960e5186894b532975562d59176a6a.css.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "application-00960e5186894b532975562d59176a6a.css.gz"; sourceTree = "<group>"; };
+		79B7A3E714A67003005738E2 /* application-6e11fd7d738824e2d198f28987d822f7.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "application-6e11fd7d738824e2d198f28987d822f7.js"; sourceTree = "<group>"; };
+		79B7A3E814A67003005738E2 /* application-6e11fd7d738824e2d198f28987d822f7.js.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "application-6e11fd7d738824e2d198f28987d822f7.js.gz"; sourceTree = "<group>"; };
+		79B7A3E914A67003005738E2 /* application.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = application.css; sourceTree = "<group>"; };
+		79B7A3EA14A67003005738E2 /* application.css.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = application.css.gz; sourceTree = "<group>"; };
+		79B7A3EB14A67003005738E2 /* application.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
+		79B7A3EC14A67003005738E2 /* application.js.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = application.js.gz; sourceTree = "<group>"; };
+		79B7A3ED14A67003005738E2 /* manifest.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = manifest.yml; sourceTree = "<group>"; };
+		79B7A3EE14A67003005738E2 /* rails-e4b51606cd77fda2615e7439907bfc92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rails-e4b51606cd77fda2615e7439907bfc92.png"; sourceTree = "<group>"; };
+		79B7A3EF14A67003005738E2 /* rails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rails.png; sourceTree = "<group>"; };
+		79B7A3F014A67003005738E2 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		79B7A3F114A67003005738E2 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		79B7A3F214A67003005738E2 /* robots.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = robots.txt; sourceTree = "<group>"; };
+		79B7A3F314A67003005738E2 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Rakefile; path = ../Rakefile; sourceTree = "<group>"; };
+		79B7A3F414A67003005738E2 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = ../README; sourceTree = "<group>"; };
+		79B7A3F514A67003005738E2 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.txt; path = ../README.txt; sourceTree = "<group>"; };
+		79B7A3F714A67003005738E2 /* rails */ = {isa = PBXFileReference; lastKnownFileType = text; path = rails; sourceTree = "<group>"; };
+		79B7A3FA14A67003005738E2 /* swyp_outs_controller_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = swyp_outs_controller_spec.rb; sourceTree = "<group>"; };
+		79B7A3FC14A67003005738E2 /* swyp_outs_helper_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = swyp_outs_helper_spec.rb; sourceTree = "<group>"; };
+		79B7A3FE14A67003005738E2 /* swyp_out_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = swyp_out_spec.rb; sourceTree = "<group>"; };
+		79B7A40014A67003005738E2 /* swyp_outs_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = swyp_outs_spec.rb; sourceTree = "<group>"; };
+		79B7A40214A67003005738E2 /* swyp_outs_routing_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = swyp_outs_routing_spec.rb; sourceTree = "<group>"; };
+		79B7A40314A67003005738E2 /* spec_helper.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = spec_helper.rb; sourceTree = "<group>"; };
+		79B7A40614A67003005738E2 /* edit.html.erb_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = edit.html.erb_spec.rb; sourceTree = "<group>"; };
+		79B7A40714A67003005738E2 /* index.html.erb_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = index.html.erb_spec.rb; sourceTree = "<group>"; };
+		79B7A40814A67003005738E2 /* new.html.erb_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = new.html.erb_spec.rb; sourceTree = "<group>"; };
+		79B7A40914A67003005738E2 /* show.html.erb_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = show.html.erb_spec.rb; sourceTree = "<group>"; };
+		79B7A40B14A67003005738E2 /* swypPair.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = swypPair.xcodeproj; sourceTree = "<group>"; };
+		79B7A41014A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A41214A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A41414A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A41614A67003005738E2 /* browsing_test.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = browsing_test.rb; sourceTree = "<group>"; };
+		79B7A41714A67003005738E2 /* test_helper.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = test_helper.rb; sourceTree = "<group>"; };
+		79B7A41914A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A41D14A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		79B7A41F14A67003005738E2 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		79B7A39014A66FDF005738E2 = {
+			isa = PBXGroup;
+			children = (
+				79B7A39914A67003005738E2 /* app */,
+				79B7A3B814A67003005738E2 /* config */,
+				79B7A3CB14A67003005738E2 /* config.ru */,
+				79B7A3CC14A67003005738E2 /* db */,
+				79B7A3D314A67003005738E2 /* doc */,
+				79B7A3D514A67003005738E2 /* Gemfile */,
+				79B7A3D614A67003005738E2 /* Gemfile.lock */,
+				79B7A3D714A67003005738E2 /* lib */,
+				79B7A3DC14A67003005738E2 /* log */,
+				79B7A3E014A67003005738E2 /* public */,
+				79B7A3F314A67003005738E2 /* Rakefile */,
+				79B7A3F414A67003005738E2 /* README */,
+				79B7A3F514A67003005738E2 /* README.txt */,
+				79B7A3F614A67003005738E2 /* script */,
+				79B7A3F814A67003005738E2 /* spec */,
+				79B7A40A14A67003005738E2 /* swypPair */,
+				79B7A40E14A67003005738E2 /* test */,
+				79B7A41A14A67003005738E2 /* vendor */,
+			);
+			sourceTree = "<group>";
+		};
+		79B7A39914A67003005738E2 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A39A14A67003005738E2 /* assets */,
+				79B7A3A414A67003005738E2 /* controllers */,
+				79B7A3A714A67003005738E2 /* helpers */,
+				79B7A3AA14A67003005738E2 /* mailers */,
+				79B7A3AC14A67003005738E2 /* models */,
+				79B7A3AF14A67003005738E2 /* views */,
+			);
+			name = app;
+			path = ../app;
+			sourceTree = "<group>";
+		};
+		79B7A39A14A67003005738E2 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A39B14A67003005738E2 /* images */,
+				79B7A39D14A67003005738E2 /* javascripts */,
+				79B7A3A014A67003005738E2 /* stylesheets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		79B7A39B14A67003005738E2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A39C14A67003005738E2 /* rails.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		79B7A39D14A67003005738E2 /* javascripts */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A39E14A67003005738E2 /* application.js */,
+				79B7A39F14A67003005738E2 /* swyp_outs.js.coffee */,
+			);
+			path = javascripts;
+			sourceTree = "<group>";
+		};
+		79B7A3A014A67003005738E2 /* stylesheets */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3A114A67003005738E2 /* application.css */,
+				79B7A3A214A67003005738E2 /* scaffolds.css.scss */,
+				79B7A3A314A67003005738E2 /* swyp_outs.css.scss */,
+			);
+			path = stylesheets;
+			sourceTree = "<group>";
+		};
+		79B7A3A414A67003005738E2 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3A514A67003005738E2 /* application_controller.rb */,
+				79B7A3A614A67003005738E2 /* swyp_outs_controller.rb */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		79B7A3A714A67003005738E2 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3A814A67003005738E2 /* application_helper.rb */,
+				79B7A3A914A67003005738E2 /* swyp_outs_helper.rb */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		79B7A3AA14A67003005738E2 /* mailers */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3AB14A67003005738E2 /* .gitkeep */,
+			);
+			path = mailers;
+			sourceTree = "<group>";
+		};
+		79B7A3AC14A67003005738E2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3AD14A67003005738E2 /* .gitkeep */,
+				79B7A3AE14A67003005738E2 /* swyp_out.rb */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		79B7A3AF14A67003005738E2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3B014A67003005738E2 /* layouts */,
+				79B7A3B214A67003005738E2 /* swyp_outs */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		79B7A3B014A67003005738E2 /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3B114A67003005738E2 /* application.html.erb */,
+			);
+			path = layouts;
+			sourceTree = "<group>";
+		};
+		79B7A3B214A67003005738E2 /* swyp_outs */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3B314A67003005738E2 /* _form.html.erb */,
+				79B7A3B414A67003005738E2 /* edit.html.erb */,
+				79B7A3B514A67003005738E2 /* index.html.erb */,
+				79B7A3B614A67003005738E2 /* new.html.erb */,
+				79B7A3B714A67003005738E2 /* show.html.erb */,
+			);
+			path = swyp_outs;
+			sourceTree = "<group>";
+		};
+		79B7A3B814A67003005738E2 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3B914A67003005738E2 /* application.rb */,
+				79B7A3BA14A67003005738E2 /* boot.rb */,
+				79B7A3BB14A67003005738E2 /* database.yml */,
+				79B7A3BC14A67003005738E2 /* environment.rb */,
+				79B7A3BD14A67003005738E2 /* environments */,
+				79B7A3C114A67003005738E2 /* initializers */,
+				79B7A3C814A67003005738E2 /* locales */,
+				79B7A3CA14A67003005738E2 /* routes.rb */,
+			);
+			name = config;
+			path = ../config;
+			sourceTree = "<group>";
+		};
+		79B7A3BD14A67003005738E2 /* environments */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3BE14A67003005738E2 /* development.rb */,
+				79B7A3BF14A67003005738E2 /* production.rb */,
+				79B7A3C014A67003005738E2 /* test.rb */,
+			);
+			path = environments;
+			sourceTree = "<group>";
+		};
+		79B7A3C114A67003005738E2 /* initializers */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3C214A67003005738E2 /* backtrace_silencers.rb */,
+				79B7A3C314A67003005738E2 /* inflections.rb */,
+				79B7A3C414A67003005738E2 /* mime_types.rb */,
+				79B7A3C514A67003005738E2 /* secret_token.rb */,
+				79B7A3C614A67003005738E2 /* session_store.rb */,
+				79B7A3C714A67003005738E2 /* wrap_parameters.rb */,
+			);
+			path = initializers;
+			sourceTree = "<group>";
+		};
+		79B7A3C814A67003005738E2 /* locales */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3C914A67003005738E2 /* en.yml */,
+			);
+			path = locales;
+			sourceTree = "<group>";
+		};
+		79B7A3CC14A67003005738E2 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3CD14A67003005738E2 /* development.sqlite3 */,
+				79B7A3CE14A67003005738E2 /* migrate */,
+				79B7A3D014A67003005738E2 /* schema.rb */,
+				79B7A3D114A67003005738E2 /* seeds.rb */,
+				79B7A3D214A67003005738E2 /* test.sqlite3 */,
+			);
+			name = db;
+			path = ../db;
+			sourceTree = "<group>";
+		};
+		79B7A3CE14A67003005738E2 /* migrate */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3CF14A67003005738E2 /* 20111224175026_create_swyp_outs.rb */,
+			);
+			path = migrate;
+			sourceTree = "<group>";
+		};
+		79B7A3D314A67003005738E2 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3D414A67003005738E2 /* README_FOR_APP */,
+			);
+			name = doc;
+			path = ../doc;
+			sourceTree = "<group>";
+		};
+		79B7A3D714A67003005738E2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3D814A67003005738E2 /* assets */,
+				79B7A3DA14A67003005738E2 /* tasks */,
+			);
+			name = lib;
+			path = ../lib;
+			sourceTree = "<group>";
+		};
+		79B7A3D814A67003005738E2 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3D914A67003005738E2 /* .gitkeep */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		79B7A3DA14A67003005738E2 /* tasks */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3DB14A67003005738E2 /* .gitkeep */,
+			);
+			path = tasks;
+			sourceTree = "<group>";
+		};
+		79B7A3DC14A67003005738E2 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3DD14A67003005738E2 /* .gitkeep */,
+				79B7A3DE14A67003005738E2 /* production.log */,
+				79B7A3DF14A67003005738E2 /* test.log */,
+			);
+			name = log;
+			path = ../log;
+			sourceTree = "<group>";
+		};
+		79B7A3E014A67003005738E2 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3E114A67003005738E2 /* 404.html */,
+				79B7A3E214A67003005738E2 /* 422.html */,
+				79B7A3E314A67003005738E2 /* 500.html */,
+				79B7A3E414A67003005738E2 /* assets */,
+				79B7A3F014A67003005738E2 /* favicon.ico */,
+				79B7A3F114A67003005738E2 /* index.html */,
+				79B7A3F214A67003005738E2 /* robots.txt */,
+			);
+			name = public;
+			path = ../public;
+			sourceTree = "<group>";
+		};
+		79B7A3E414A67003005738E2 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3E514A67003005738E2 /* application-00960e5186894b532975562d59176a6a.css */,
+				79B7A3E614A67003005738E2 /* application-00960e5186894b532975562d59176a6a.css.gz */,
+				79B7A3E714A67003005738E2 /* application-6e11fd7d738824e2d198f28987d822f7.js */,
+				79B7A3E814A67003005738E2 /* application-6e11fd7d738824e2d198f28987d822f7.js.gz */,
+				79B7A3E914A67003005738E2 /* application.css */,
+				79B7A3EA14A67003005738E2 /* application.css.gz */,
+				79B7A3EB14A67003005738E2 /* application.js */,
+				79B7A3EC14A67003005738E2 /* application.js.gz */,
+				79B7A3ED14A67003005738E2 /* manifest.yml */,
+				79B7A3EE14A67003005738E2 /* rails-e4b51606cd77fda2615e7439907bfc92.png */,
+				79B7A3EF14A67003005738E2 /* rails.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		79B7A3F614A67003005738E2 /* script */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3F714A67003005738E2 /* rails */,
+			);
+			name = script;
+			path = ../script;
+			sourceTree = "<group>";
+		};
+		79B7A3F814A67003005738E2 /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3F914A67003005738E2 /* controllers */,
+				79B7A3FB14A67003005738E2 /* helpers */,
+				79B7A3FD14A67003005738E2 /* models */,
+				79B7A3FF14A67003005738E2 /* requests */,
+				79B7A40114A67003005738E2 /* routing */,
+				79B7A40314A67003005738E2 /* spec_helper.rb */,
+				79B7A40414A67003005738E2 /* views */,
+			);
+			name = spec;
+			path = ../spec;
+			sourceTree = "<group>";
+		};
+		79B7A3F914A67003005738E2 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3FA14A67003005738E2 /* swyp_outs_controller_spec.rb */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		79B7A3FB14A67003005738E2 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3FC14A67003005738E2 /* swyp_outs_helper_spec.rb */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		79B7A3FD14A67003005738E2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A3FE14A67003005738E2 /* swyp_out_spec.rb */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		79B7A3FF14A67003005738E2 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A40014A67003005738E2 /* swyp_outs_spec.rb */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		79B7A40114A67003005738E2 /* routing */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A40214A67003005738E2 /* swyp_outs_routing_spec.rb */,
+			);
+			path = routing;
+			sourceTree = "<group>";
+		};
+		79B7A40414A67003005738E2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A40514A67003005738E2 /* swyp_outs */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		79B7A40514A67003005738E2 /* swyp_outs */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A40614A67003005738E2 /* edit.html.erb_spec.rb */,
+				79B7A40714A67003005738E2 /* index.html.erb_spec.rb */,
+				79B7A40814A67003005738E2 /* new.html.erb_spec.rb */,
+				79B7A40914A67003005738E2 /* show.html.erb_spec.rb */,
+			);
+			path = swyp_outs;
+			sourceTree = "<group>";
+		};
+		79B7A40A14A67003005738E2 /* swypPair */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A40B14A67003005738E2 /* swypPair.xcodeproj */,
+			);
+			name = swypPair;
+			sourceTree = "<group>";
+		};
+		79B7A40C14A67003005738E2 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79B7A40E14A67003005738E2 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A40F14A67003005738E2 /* fixtures */,
+				79B7A41114A67003005738E2 /* functional */,
+				79B7A41314A67003005738E2 /* integration */,
+				79B7A41514A67003005738E2 /* performance */,
+				79B7A41714A67003005738E2 /* test_helper.rb */,
+				79B7A41814A67003005738E2 /* unit */,
+			);
+			name = test;
+			path = ../test;
+			sourceTree = "<group>";
+		};
+		79B7A40F14A67003005738E2 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41014A67003005738E2 /* .gitkeep */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+		79B7A41114A67003005738E2 /* functional */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41214A67003005738E2 /* .gitkeep */,
+			);
+			path = functional;
+			sourceTree = "<group>";
+		};
+		79B7A41314A67003005738E2 /* integration */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41414A67003005738E2 /* .gitkeep */,
+			);
+			path = integration;
+			sourceTree = "<group>";
+		};
+		79B7A41514A67003005738E2 /* performance */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41614A67003005738E2 /* browsing_test.rb */,
+			);
+			path = performance;
+			sourceTree = "<group>";
+		};
+		79B7A41814A67003005738E2 /* unit */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41914A67003005738E2 /* .gitkeep */,
+			);
+			path = unit;
+			sourceTree = "<group>";
+		};
+		79B7A41A14A67003005738E2 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41B14A67003005738E2 /* assets */,
+				79B7A41E14A67003005738E2 /* plugins */,
+			);
+			name = vendor;
+			path = ../vendor;
+			sourceTree = "<group>";
+		};
+		79B7A41B14A67003005738E2 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41C14A67003005738E2 /* stylesheets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		79B7A41C14A67003005738E2 /* stylesheets */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41D14A67003005738E2 /* .gitkeep */,
+			);
+			path = stylesheets;
+			sourceTree = "<group>";
+		};
+		79B7A41E14A67003005738E2 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				79B7A41F14A67003005738E2 /* .gitkeep */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		79B7A39214A66FDF005738E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = ExoMachina;
+			};
+			buildConfigurationList = 79B7A39514A66FDF005738E2 /* Build configuration list for PBXProject "swypPair" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79B7A39014A66FDF005738E2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 79B7A40C14A67003005738E2 /* Products */;
+					ProjectRef = 79B7A40B14A67003005738E2 /* swypPair.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		79B7A39714A66FDF005738E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		79B7A39814A66FDF005738E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79B7A39514A66FDF005738E2 /* Build configuration list for PBXProject "swypPair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B7A39714A66FDF005738E2 /* Debug */,
+				79B7A39814A66FDF005738E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79B7A39214A66FDF005738E2 /* Project object */;
+}
