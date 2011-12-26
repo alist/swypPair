@@ -1,5 +1,6 @@
 SwypPair::Application.routes.draw do
   resources :swyp_outs
+  match 'status/:swypID' => 'swyp_status#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
