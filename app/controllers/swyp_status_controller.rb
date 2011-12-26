@@ -7,7 +7,7 @@ class SwypStatusController < ApplicationController
 	
 	#GET /swyp_status/xyz.json
 	def show
-		@swyp = SwypOut.find(params[:swypID])
+		@swyp = SwypOut.find(params[:id])
 	end
 	
 end
