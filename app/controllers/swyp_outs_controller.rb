@@ -44,7 +44,7 @@ class SwypOutsController < ApplicationController
 
     respond_to do |format|
       if @swyp_out.save
-		  format.html { render json: @swyp_out.errors, status: :unprocessable_entity } 
+		  format.html { render json: @swyp_out, status: :created, location: @swyp_out }
 		  # { redirect_to @swyp_out, notice: 'Swyp out was successfully created.' }
         format.json { render json: @swyp_out, status: :created, location: @swyp_out }
       else
