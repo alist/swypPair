@@ -1,5 +1,7 @@
-if [ `pwd` == "script"]; then
-cd ..
+#!/bin/bash
+dir=`pwd`
+if [ -r "runOnHeroku.sh" ]; then
+	cd ..
 fi
 bundle exec rake assets:precompile
 git add .
