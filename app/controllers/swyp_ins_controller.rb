@@ -14,6 +14,7 @@ class SwypInsController < ApplicationController
   # GET /swyp_ins/1.json
   def show
     @swyp_in = SwypIn.find(params[:id])
+	@swyp_peer	= @swyp_in.swypOut
 
 	if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
 	  #test user on safari should see visual console
