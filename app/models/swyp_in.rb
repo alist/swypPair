@@ -2,12 +2,12 @@ class SwypIn < ActiveRecord::Base
 	has_one :swypOut
 	
 	def pair
-		swypOut = SwypOut.find(3)
+		self.swypOut = SwypOut.find(3)
 		
-		if swypOut
-			puts "paired swypIn w/ id", id, "w/ swypOut id'd: ", swypOut.id
+		if self.swypOut
+			puts ["paired swypIn w/ id", self.id, "w/ swypOut id'd: ", self.swypOut.id].join
 		else
-			puts "could not pair swypIn w/ id", id
+			puts ["could not pair swypIn w/ id", self.id].join
 		end
 	end
 end
