@@ -20,3 +20,4 @@ build/*
 *.perspective
 *.perspectivev3
 .DS_Store
+*.xcuserdatad
