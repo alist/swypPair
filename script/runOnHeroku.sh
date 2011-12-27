@@ -5,5 +5,5 @@ if [ -r "runOnHeroku.sh" ]; then
 fi
 #bundle exec rake assets:precompile
 git add .
-git commit -m "autoPush to heroku"
+git commit -am "autoPush to heroku"
 git push heroku master
