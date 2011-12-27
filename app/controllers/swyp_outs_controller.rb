@@ -15,12 +15,14 @@ class SwypOutsController < ApplicationController
   # GET /swyp_outs/1
   # GET /swyp_outs/1.json
   def show
-    @swyp = SwypOut.find(params[:id])
+    @swyp_out = SwypOut.find(params[:id])
 
 	if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
 		#test user on safari should see visual console
+		render
 	else
 		#all others should just get json
+		@swyp = @swyp_out
 		render 'shared/status.json'
 	end
 	  
@@ -47,7 +49,8 @@ class SwypOutsController < ApplicationController
   def create
 	@swyp_out = SwypOut.new(params[:swyp_out])
 
-	if @swyp_out.save		
+	if @swyp_out.save	
+		@swyp = @swyp_out
 		render 'shared/status.json'
 	else
 	  format.json { render json: @swyp_out.errors, status: :unprocessable_entity }
