@@ -46,7 +46,7 @@ class SwypInsController < ApplicationController
   # POST /swyp_ins.json
 	def create
 		@swyp_in	= SwypIn.new(params[:swyp_in])
-		@peer		= @swyp_in.pair
+		@swyp_peer	= @swyp_in.pair
 		
 		if @swyp_in.save	
 			@swyp = @swyp_in

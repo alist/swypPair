@@ -1,1 +1,6 @@
-{swypID: <%= @swyp.id %>, status:  0,  peer: {<%= @peer? {"id:"; @swypPeer.id}%>}}
+{swypID: <%= @swyp.id %>, status:  0,  peer: {<%= 
+	if @peer
+		puts "id:"
+		@swyp_peer.id
+	end
+%>}}
