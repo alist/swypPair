@@ -19,7 +19,6 @@ class SwypOutsController < ApplicationController
 
 	if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
 		#test user on safari should see visual console
-		render
 	else
 		#all others should just get json
 		render 'shared/status.json'
