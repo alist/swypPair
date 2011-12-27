@@ -16,7 +16,13 @@ class SwypOutsController < ApplicationController
     @swyp_out = SwypOut.find(params[:id])
 
     respond_to do |format|
-	  format.html { render :text => request.env['HTTP_USER_AGENT'] }
+	  format.html {
+		if request.env['HTTP_USER_AGENT'][Chrome]
+			render
+		else 
+			render { render json: @swyp_out }
+		end
+	  }
       format.json { render json: @swyp_out }
     end
   end
