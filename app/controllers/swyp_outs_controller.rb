@@ -17,7 +17,7 @@ class SwypOutsController < ApplicationController
 
     respond_to do |format|
 	  format.html {
-		if request.env['HTTP_USER_AGENT']['Chrome']
+		if request.env['HTTP_USER_AGENT']['Chrome'] != nil
 			render { render json: @swyp_out }
 		else 
 			render
