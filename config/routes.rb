@@ -1,4 +1,6 @@
 SwypPair::Application.routes.draw do
+  resources :swyp_ins
+
   resources :swyp_outs
   
   match 'status/:id' => 'SwypStatus#show'

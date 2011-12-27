@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  when: 2011-12-27 14:29:07
+  where: MyString
+  velocity: 1
+  address: MyString
+  port: 1
+  id: MyString
+  publicKey: 
+
+two:
+  when: 2011-12-27 14:29:07
+  where: MyString
+  velocity: 1
+  address: MyString
+  port: 1
+  id: MyString
+  publicKey: 
