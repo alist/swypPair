@@ -61,8 +61,8 @@
 			buildConfigurationList = 79B7A43E14AA17FE005738E2 /* Build configuration list for PBXLegacyTarget "swypPair" */;
 			buildPhases = (
 			);
-			buildToolPath = ../script/runOnHeroku.sh;
-			buildWorkingDirectory = "";
+			buildToolPath = ./script/runOnHeroku.sh;
+			buildWorkingDirectory = ..;
 			dependencies = (
 			);
 			name = swypPair;
