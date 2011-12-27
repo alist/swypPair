@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(:version => 20111227193807) do
     t.binary   "publicKey"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "swypIn_id"
+    t.integer  "swyp_in_id"
   end
 
 end
