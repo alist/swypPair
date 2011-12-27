@@ -9,5 +9,7 @@ class SwypIn < ActiveRecord::Base
 		else
 			puts ["could not pair swypIn w/ id", self.id].join
 		end
+		
+		return self.swypOut
 	end
 end
