@@ -1,3 +1,7 @@
-git add ..
+if [ `pwd` == "script"]; then
+cd ..
+fi
+bundle exec rake assets:precompile
+git add .
 git commit -m "autoPush to heroku"
 git push heroku master

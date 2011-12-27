@@ -1,7 +1,7 @@
 test.log
 *.sqlite3
 development.log
-./tmp/
+tmp/
 *.swp
 
 
