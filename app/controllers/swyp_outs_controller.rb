@@ -13,7 +13,7 @@ class SwypOutsController < ApplicationController
   # GET /swyp_outs/1
   # GET /swyp_outs/1.json
   def show
-    @swyp_out = SwypOut.find(params[:id])
+    @swyp = SwypOut.find(params[:id])
 
     respond_to do |format|
 	  format.html {
