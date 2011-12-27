@@ -1,6 +1,6 @@
 {swypID: <%= @swyp.id %>, status:  0,  peer: {<%= 
 	if @swyp_peer
-		"id:"
+		"id:".to_html
 		@swyp_peer.id
 	end
 %>}}
