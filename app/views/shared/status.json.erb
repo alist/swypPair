@@ -1,6 +1,9 @@
-{swypID: <%= @swyp.id %>, status:  0,  peer: {<% if @swyp_peer %>
+{swypID: <%= @swyp.id %>, status: <%= @swyp.status =>,  peer: 
+<% if @swyp_peer %> {
 	"id" : <%= "#{@swyp_peer.id.to_s}" %>,
 	"port" : <%= "#{@swyp_peer.port.to_s}" %>,
 	"ip" : "<%= "#{@swyp_peer.address}" %>",
 	"pubKey" : "<%= "#{@swyp_peer.publicKey}" %>"	
-<% end %>}}
+}<% else %>
+	null
+<% end %>}
