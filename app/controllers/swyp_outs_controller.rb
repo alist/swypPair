@@ -23,7 +23,7 @@ class SwypOutsController < ApplicationController
 			render
 		end
 	  }
-      format.json { render json: @swyp_out }
+      format.json { render json: @swyp }
     end
   end
 
