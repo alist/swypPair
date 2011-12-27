@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111224175026) do
+ActiveRecord::Schema.define(:version => 20111227193807) do
+
+  create_table "swyp_ins", :force => true do |t|
+    t.datetime "when"
+    t.string   "where"
+    t.integer  "velocity"
+    t.string   "address"
+    t.integer  "port"
+    t.binary   "publicKey"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "swyp_outs", :force => true do |t|
     t.datetime "when"
@@ -22,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20111224175026) do
     t.binary   "publicKey"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "swypIn_id"
   end
 
 end
