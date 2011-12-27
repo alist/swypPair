@@ -14,9 +14,7 @@ class SwypIn < ActiveRecord::Base
 	end
 	
 	def status
-		if self.swypOut.exists
-			return "paired"
-		end
+		self.swypOut.exists? {return "paired"}
 		return "failed"
 	end
 
