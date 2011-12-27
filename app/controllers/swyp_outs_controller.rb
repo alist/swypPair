@@ -16,9 +16,8 @@ class SwypOutsController < ApplicationController
     @swyp_out = SwypOut.find(params[:id])
 
     respond_to do |format|
-		#      format.html # show.html.erb
-	  render :text => request.env['HTTP_USER_AGENT']
-		#      format.json { render json: @swyp_out }
+	  format.html { render :text => request.env['HTTP_USER_AGENT'] }
+      format.json { render json: @swyp_out }
     end
   end
 
