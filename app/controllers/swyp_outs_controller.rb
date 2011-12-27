@@ -2,7 +2,9 @@ class SwypOutsController < ApplicationController
   # GET /swyp_outs
   # GET /swyp_outs.json
   def index
-    @swyp_outs = SwypOut.all
+	  #	  render :status => 400
+
+	@swyp_outs = SwypOut.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,23 +17,21 @@ class SwypOutsController < ApplicationController
   def show
     @swyp = SwypOut.find(params[:id])
 
-    respond_to do |format|
-	  format.html {
-		if request.env['HTTP_USER_AGENT']['Chrome'] != nil
-			render 'shared/status.json'
-		else 
-			render
-		end
-	  }
-      format.json { render json: @swyp }
-    end
+	if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
+		#test user on safari should see visual console
+		render
+	else
+		#all others should just get json
+		render 'shared/status.json'
+	end
+	  
   end
 
   # GET /swyp_outs/new
   # GET /swyp_outs/new.json
   def new
     @swyp_out = SwypOut.new
-
+	  
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @swyp_out }
@@ -46,18 +46,14 @@ class SwypOutsController < ApplicationController
   # POST /swyp_outs
   # POST /swyp_outs.json
   def create
-    @swyp_out = SwypOut.new(params[:swyp_out])
+	@swyp_out = SwypOut.new(params[:swyp_out])
 
-    respond_to do |format|
-      if @swyp_out.save
-		  #format.html { render json: @swyp_out.errors, status: :unprocessable_entity } #json
-		  format.html { redirect_to @swyp_out, notice: 'Swyp out was successfully created.' }
-        format.json { render json: @swyp_out, status: :created, location: @swyp_out }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @swyp_out.errors, status: :unprocessable_entity }
-      end
-    end
+	if @swyp_out.save		
+		render 'shared/status.json'
+	else
+	  format.json { render json: @swyp_out.errors, status: :unprocessable_entity }
+	end
+	  
   end
 
   # PUT /swyp_outs/1
