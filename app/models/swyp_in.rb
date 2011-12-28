@@ -2,7 +2,7 @@ class SwypIn < ActiveRecord::Base
 	has_one :swypOut
 	
 	def pair
-		self.swypOut = SwypOut.find(3)
+		self.swypOut = SwypOut.last
 		
 		if self.swypOut
 			puts ["paired swypIn w/ id", self.id, "w/ swypOut id'd: ", self.swypOut.id].join
