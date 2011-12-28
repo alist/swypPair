@@ -1,8 +1,9 @@
 class SwypOut < ActiveRecord::Base
-	belongs_to :swypIn, :foreign_key => "swyp_in_id"
+	belongs_to :swypIn
 	
 	def status
-		self.swypIn.exists? {return "paired"}
+		if self.swypIn != nil
+			return "paired"
 		
 		timeDifference = ((DateTime.now - self.created_at)* 60 * 60 * 24).to_i
 		puts "time difference #{timeDifference}"
