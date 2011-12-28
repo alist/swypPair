@@ -1,6 +1,6 @@
 class SwypOut < ActiveRecord::Base
 	belongs_to :swypIn, :foreign_key => "swyp_in_id"
-	after_initialize :set_defaults
+	before_save :set_defaults
 	
 	def set_defaults
 		self.swypToken  = self.id.to_s
@@ -14,7 +14,7 @@ class SwypOut < ActiveRecord::Base
 		end
 		
 		timeDifference = (DateTime.now.to_i - self.created_at.to_i)
-		puts "time difference #{timeDifference.to_s}"
+		#puts "time difference #{timeDifference.to_s}"
 		
 		if timeDifference < 10
 			return "pending"
