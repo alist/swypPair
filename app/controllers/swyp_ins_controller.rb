@@ -15,8 +15,12 @@ class SwypInsController < ApplicationController
   def show
 	@swyp_in = SwypIn.find_by_id(params[:id]) #regular find throws 404
 	if @swyp_in == nil
-		@swyp_in = SwypIn.where!(:swypToken => params[:id]).first
+		@swyp_in = SwypIn.where(:swypToken => params[:id]).first
 	end
+	if @swyp_in == nil
+		render :status => 404
+	end
+	  
 	@swyp_peer	= @swyp_in.swypOut
 
 	if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
