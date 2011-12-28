@@ -17,6 +17,17 @@ class SwypOutsController < ApplicationController
   def show
     @swyp_out = SwypOut.find(params[:id])
 	@swyp_peer	= @swyp_out.swypIn
+	  
+	  @swyp_out = SwypOut.find_by_id(params[:id]) #regular find throws 404
+	  if @swyp_out == nil
+		  @swyp_out = SwypOut.where(:swypToken => params[:id]).first
+	  end
+	  
+	  if @swyp_out == nil
+		  render :text => "{\"status\":\"failed\"}" , :status => 404
+		  return
+	  end
+
 
 	if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
 		#test user on safari should see visual console
