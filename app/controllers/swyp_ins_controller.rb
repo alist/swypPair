@@ -13,9 +13,9 @@ class SwypInsController < ApplicationController
   # GET /swyp_ins/1
   # GET /swyp_ins/1.json
   def show
-    @swyp_in = SwypIn.find_by_id(params[:id])
+	@swyp_in = SwypIn.find_by_id(params[:id]) #regular find throws 404
 	if @swyp_in == nil
-		@swyp_in = SwypIn.where(:swypToken => params[:id]).first
+		@swyp_in = SwypIn.where!(:swypToken => params[:id]).first
 	end
 	@swyp_peer	= @swyp_in.swypOut
 
