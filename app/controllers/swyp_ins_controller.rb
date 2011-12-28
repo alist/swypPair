@@ -17,8 +17,9 @@ class SwypInsController < ApplicationController
 	if @swyp_in == nil
 		@swyp_in = SwypIn.where(:swypToken => params[:id]).first
 	end
+
 	if @swyp_in == nil
-		render :status => 404
+		render :json, :status => 404
 		return
 	end
 	  
