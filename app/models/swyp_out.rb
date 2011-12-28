@@ -1,5 +1,5 @@
 class SwypOut < ActiveRecord::Base
-	belongs_to :swypIn
+	belongs_to :swypIn, :foreign_key => "swyp_in_id"
 	
 	def status
 		if self.swypIn != nil
