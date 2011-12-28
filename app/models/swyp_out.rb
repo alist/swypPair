@@ -3,6 +3,7 @@ class SwypOut < ActiveRecord::Base
 	
 	def status
 		if self.swypIn != nil
+			puts "paired"
 			return "paired"
 		end
 		
