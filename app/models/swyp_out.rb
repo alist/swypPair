@@ -1,9 +1,9 @@
 class SwypOut < ActiveRecord::Base
 	belongs_to :swypIn, :foreign_key => "swyp_in_id"
 	
-	#	def init
-	#	self.token  ||= self.id.to_s
-	#end
+	def init
+		self.token  ||= self.id.to_s
+	end
 	
 	def status
 		if self.swypIn != nil
