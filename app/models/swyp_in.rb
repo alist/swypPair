@@ -1,10 +1,12 @@
 class SwypIn < ActiveRecord::Base
 	has_one :swypOut
-	
-	def after_initialize	
+	after_save :set_defaults
+
+	def set_defaults
 		self.swypToken  = self.id.to_s
 		puts "after init id #{self.id.to_s} setting token #{self.swypToken}"
-		#self.swypToken  ||= self.id.to_s
+		#||= self.id.to_s
+		self.save
 	end
 	
 	def pair
