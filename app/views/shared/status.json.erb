@@ -1,6 +1,6 @@
-{"swypToken": <%= @swyp.swypToken %>, "status": "<%= @swyp.status %>",  "peer": 
+{"swypToken": "<%= @swyp.swypToken %>", "status": "<%= @swyp.status %>",  "peer": 
 <% if @swyp_peer != nil %> {
-	"swypToken" : <%= "#{@swyp_peer.swypToken.to_s}" %>,
+	"swypToken" : "<%= "#{@swyp_peer.swypToken.to_s}" %>",
 	"port" : <%= "#{@swyp_peer.port.to_s}" %>,
 	"ip" : "<%= "#{@swyp_peer.address}" %>",
 	"pubKey" : "<%= "#{@swyp_peer.publicKey}" %>"	
