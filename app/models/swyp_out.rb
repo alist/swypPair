@@ -1,8 +1,8 @@
 class SwypOut < ActiveRecord::Base
 	belongs_to :swypIn, :foreign_key => "swyp_in_id"
+	after_initialize :set_defaults
 	
-	def init
-		super
+	def set_defaults
 		self.swypToken  = self.id.to_s
 		puts "after init id #{self.id.to_s} setting token #{self.swypToken}"
 		#||= self.id.to_s
