@@ -6,8 +6,9 @@ class SwypOut < ActiveRecord::Base
 			return "paired"
 		end
 		
-		timeDifference = ((DateTime.now - self.created_at)* 60 * 60 * 24).to_i
-		puts "time difference #{timeDifference}"
+		dayDifference = (DateTime.now - self.created_at)
+		timeDifference = (dayDifference * 60 * 60 * 24)
+		puts "time difference #{timeDifference.to_i}"
 		
 		if timeDifference < 10
 			return "pending"
