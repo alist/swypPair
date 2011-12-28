@@ -3,8 +3,8 @@ class SwypIn < ActiveRecord::Base
 	after_save :set_defaults
 
 	def set_defaults
-		self.swypToken  = self.id.to_s
-		puts "after init id #{self.id.to_s} setting token #{self.swypToken}"
+		require "digest"
+		self.swypToken  = Digest::MD5.hexdigest("#{DateTime.now.to_i.to_s}#{self.address}#{self.velocity}")
 		#||= self.id.to_s
 		self.save
 	end
