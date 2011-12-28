@@ -48,7 +48,8 @@ class SwypOutsController < ApplicationController
   # POST /swyp_outs
   # POST /swyp_outs.json
   def create
-	@swyp_out = SwypOut.new(params[:swyp_out])
+	@swyp_out			= SwypOut.new(params[:swyp_out])
+	@swyp_out.address	= request.remote_ip
 
 	if @swyp_out.save	
 		@swyp = @swyp_out

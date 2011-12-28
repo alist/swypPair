@@ -1,6 +1,10 @@
 class SwypIn < ActiveRecord::Base
 	has_one :swypOut
 	
+	def init
+		self.token  ||= self.id.to_s
+	end
+	
 	def pair
 		self.swypOut = SwypOut.last
 		
