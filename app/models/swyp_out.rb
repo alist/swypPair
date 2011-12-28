@@ -4,6 +4,7 @@ class SwypOut < ActiveRecord::Base
 	def status
 		if self.swypIn != nil
 			return "paired"
+		end
 		
 		timeDifference = ((DateTime.now - self.created_at)* 60 * 60 * 24).to_i
 		puts "time difference #{timeDifference}"
