@@ -2,7 +2,8 @@ class SwypIn < ActiveRecord::Base
 	has_one :swypOut
 	
 	def after_initialize	
-		self.swypToken  ||= self.id.to_s
+		self.swypToken  = self.id.to_s
+		#self.swypToken  ||= self.id.to_s
 	end
 	
 	def pair
