@@ -19,6 +19,7 @@ class SwypInsController < ApplicationController
 	end
 	if @swyp_in == nil
 		render :status => 404
+		return
 	end
 	  
 	@swyp_peer	= @swyp_in.swypOut
