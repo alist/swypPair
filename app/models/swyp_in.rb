@@ -1,7 +1,7 @@
 class SwypIn < ActiveRecord::Base
 	has_one :swypOut
 	
-	def init
+	def after_initialize
 		self.token  ||= self.id.to_s
 	end
 	
