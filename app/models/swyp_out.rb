@@ -3,6 +3,7 @@ class SwypOut < ActiveRecord::Base
 	
 	def after_initialize
 		self.swypToken  = self.id.to_s
+		puts "after init id #{self.id.to_s} setting token #{self.swypToken}"
 		#||= self.id.to_s
 	end
 	
