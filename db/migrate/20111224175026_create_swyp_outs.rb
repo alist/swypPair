@@ -6,7 +6,6 @@ class CreateSwypOuts < ActiveRecord::Migration
       t.integer :velocity
       t.string :address
       t.integer :port
-      t.string :id
       t.binary :publicKey
 
       t.timestamps

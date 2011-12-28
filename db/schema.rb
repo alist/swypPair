@@ -11,10 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111227193807) do
+ActiveRecord::Schema.define(:version => 20111228203601) do
 
   create_table "swyp_ins", :force => true do |t|
-    t.datetime "when"
     t.string   "where"
     t.integer  "velocity"
     t.string   "address"
@@ -22,10 +21,10 @@ ActiveRecord::Schema.define(:version => 20111227193807) do
     t.binary   "publicKey"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "swypToken"
   end
 
   create_table "swyp_outs", :force => true do |t|
-    t.datetime "when"
     t.string   "where"
     t.integer  "velocity"
     t.string   "address"
@@ -34,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20111227193807) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "swyp_in_id"
+    t.string   "swypToken"
   end
 
 end
