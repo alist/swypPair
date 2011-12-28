@@ -1,12 +1,12 @@
 class SwypOut < ActiveRecord::Base
 	belongs_to :swypIn, :foreign_key => "swyp_in_id"
-	after_save :set_defaults
+	before_save :set_defaults
 	
 	def set_defaults
-		self.swypToken  = self.id.to_s
+		require "digest"
+		self.swypToken  = Digest::MD5.hexdigest(DateTime.now.to_i.to_s)
 		puts "after init id #{self.id.to_s} setting token #{self.swypToken}"
 		#||= self.id.to_s
-		self.save
 	end
 	
 	def status
