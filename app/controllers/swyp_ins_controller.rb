@@ -19,7 +19,7 @@ class SwypInsController < ApplicationController
 	end
 
 	if @swyp_in == nil
-		render :json, :status => 404
+		render :text => "{\"status\":\"failed\"}" , :status => 404
 		return
 	end
 	  
