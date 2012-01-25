@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(:version => 20111228203601) do
     t.string   "address"
     t.integer  "port"
     t.binary   "publicKey"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "swypToken"
   end
 
@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(:version => 20111228203601) do
     t.string   "address"
     t.integer  "port"
     t.binary   "publicKey"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "swyp_in_id"
     t.string   "swypToken"
   end
