@@ -15,26 +15,25 @@ class SwypOutsController < ApplicationController
   # GET /swyp_outs/1
   # GET /swyp_outs/1.json
   def show
-  @swyp_out = SwypOut.find_by_id(params[:id]) #regular find throws 404
-  if @swyp_out == nil
-    @swyp_out = SwypOut.where(:swypToken => params[:id]).first
-  end
-    
-  if @swyp_out == nil
-    render :text => "{\"status\":\"failed\"}" , :status => 404
-    return
-  end
-  @swyp_peer  = @swyp_out.swypIn
+    @swyp_out = SwypOut.find_by_id(params[:id]) #regular find throws 404
+    if @swyp_out == nil
+      @swyp_out = SwypOut.where(:swypToken => params[:id]).first
+    end
+      
+    if @swyp_out == nil
+      render :text => "{\"status\":\"failed\"}" , :status => 404
+      return
+    end
+    @swyp_peer  = @swyp_out.swypIn
 
-  if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
-    #test user on safari should see visual console
-    render
-  else
-    #all others should just get json
-    @swyp = @swyp_out
-    render 'shared/status.json'
-  end
-    
+    if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
+      #test user on safari should see visual console
+      render
+    else
+      #all others should just get json
+      @swyp = @swyp_out
+      render 'shared/status.json'
+    end
   end
 
   # GET /swyp_outs/new
@@ -56,16 +55,16 @@ class SwypOutsController < ApplicationController
   # POST /swyp_outs
   # POST /swyp_outs.json
   def create
-  @swyp_out     = SwypOut.new(params[:swyp_out])
-  @swyp_out.address = request.remote_ip
+    @swyp_out         = SwypOut.new(params[:swyp_out])
+    @swyp_out.address = request.remote_ip
+    @swyp_out.developer = Developer.find_by_api_key(params[:api_key]})
 
-  if @swyp_out.save 
-    @swyp = @swyp_out
-    render 'shared/status.json'
-  else
-    format.json { render json: @swyp_out.errors, status: :unprocessable_entity }
-  end
-    
+    if @swyp_out.save 
+      @swyp = @swyp_out
+      render 'shared/status.json'
+    else
+      format.json { render json: @swyp_out.errors, status: :unprocessable_entity }
+    end
   end
 
   # PUT /swyp_outs/1

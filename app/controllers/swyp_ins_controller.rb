@@ -55,11 +55,12 @@ class SwypInsController < ApplicationController
   # POST /swyp_ins
   # POST /swyp_ins.json
   def create
-    @swyp_in          = SwypIn.new(params[:swyp_in])
-    @swyp_in.address  = request.remote_ip
-    @swyp_peer        = @swyp_in.pair
+    @swyp_in           = SwypIn.new(params[:swyp_in])
+    @swyp_in.address   = request.remote_ip
+    @swyp_peer         = @swyp_in.pair
+    @swyp_in.developer = Developer.find_by_api_key(params[:api_key]})
     
-    if @swyp_in.save  
+    if @swyp_in.save
       @swyp = @swyp_in
       render 'shared/status.json'
       else
