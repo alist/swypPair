@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+devs = Developer.create([
+  {name:"Ethan Sherbondy", email: "ethanis@mit.edu", api_key:"testing123"},
+  {name:"Alex List", email: "alist@mit.edu", api_key:"abceasyas123"}
+])

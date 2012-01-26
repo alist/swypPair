@@ -13,26 +13,26 @@ class SwypInsController < ApplicationController
   # GET /swyp_ins/1
   # GET /swyp_ins/1.json
   def show
-	@swyp_in = SwypIn.find_by_id(params[:id]) #regular find throws 404
-	if @swyp_in == nil
-		@swyp_in = SwypIn.where(:swypToken => params[:id]).first
-	end
+  @swyp_in = SwypIn.find_by_id(params[:id]) #regular find throws 404
+  if @swyp_in == nil
+    @swyp_in = SwypIn.where(:swypToken => params[:id]).first
+  end
 
-	if @swyp_in == nil
-		render :text => "{\"status\":\"failed\"}" , :status => 404
-		return
-	end
-	  
-	@swyp_peer	= @swyp_in.swypOut
+  if @swyp_in == nil
+    render :text => "{\"status\":\"failed\"}" , :status => 404
+    return
+  end
+    
+  @swyp_peer  = @swyp_in.swypOut
 
-	if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
-	  #test user on safari should see visual console
-	  render
-	else
-	  #all others should just get json
-	  @swyp = @swyp_in
-	  render 'shared/status.json'
-	end
+  if request.env['HTTP_USER_AGENT']['Chrome'] == nil && request.env['HTTP_USER_AGENT']['Safari'] != nil
+    #test user on safari should see visual console
+    render
+  else
+    #all others should just get json
+    @swyp = @swyp_in
+    render 'shared/status.json'
+  end
 
   end
 
@@ -54,19 +54,19 @@ class SwypInsController < ApplicationController
 
   # POST /swyp_ins
   # POST /swyp_ins.json
-	def create
-		@swyp_in			= SwypIn.new(params[:swyp_in])
-		@swyp_in.address	= request.remote_ip
-		@swyp_peer			= @swyp_in.pair
-		
-		if @swyp_in.save	
-			@swyp = @swyp_in
-			render 'shared/status.json'
-			else
-			format.json { render json: @swyp_in.errors, status: :unprocessable_entity }
-		end
-		
-	end
+  def create
+    @swyp_in          = SwypIn.new(params[:swyp_in])
+    @swyp_in.address  = request.remote_ip
+    @swyp_peer        = @swyp_in.pair
+    
+    if @swyp_in.save  
+      @swyp = @swyp_in
+      render 'shared/status.json'
+      else
+      format.json { render json: @swyp_in.errors, status: :unprocessable_entity }
+    end
+    
+  end
 
   # PUT /swyp_ins/1
   # PUT /swyp_ins/1.json
