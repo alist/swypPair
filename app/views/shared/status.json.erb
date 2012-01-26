@@ -1,8 +1,8 @@
 {"swypToken": "<%= @swyp.swypToken %>", "status": "<%= @swyp.status %>",  "peer": 
 <% if @swyp_peer != nil %> {
-	"swypToken" : "<%= "#{@swyp_peer.swypToken.to_s}" %>",
-	"port" : <%= "#{@swyp_peer.port.to_s}" %>,
-	"ip" : "<%= "#{@swyp_peer.address}" %>",
-  "pubKey" : "<%= "#{@swyp_peer.publicKey}" %>"	
+  "swypToken" : "<%= "#{@swyp_peer.swypToken.to_s}" %>",
+  "port" : <%= "#{@swyp_peer.port.to_s}" %>,
+  "ip" : "<%= "#{@swyp_peer.address}" %>",
+  "pubKey" : "<%= "#{@swyp_peer.publicKey}" %>" 
   "developer" : "<%= "#{@swyp_peer.developer.name}" %>"
 }<% else %> null <% end %>}
