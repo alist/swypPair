@@ -57,8 +57,6 @@ class SwypOutsController < ApplicationController
   def create
     @swyp_out         = SwypOut.new(params[:swyp_out])
     @swyp_out.address = request.remote_ip
-
-    puts params[:api_key]
     @swyp_out.developer = Developer.find_by_api_key(params[:api_key])
 
     if @swyp_out.save 
