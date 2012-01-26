@@ -30,6 +30,10 @@
   <%= @swyp_out.publicKey %>
 </p>
 
+<p>
+  <b>Developer:</b>
+  <%= @swyp_out.developer.name %>
+</p>
 
 <%= link_to 'Edit', edit_swyp_out_path(@swyp_out) %> |
 <%= link_to 'Back', swyp_outs_path %>
