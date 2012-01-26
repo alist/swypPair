@@ -63,7 +63,7 @@ class SwypInsController < ApplicationController
     if @swyp_in.save
       @swyp = @swyp_in
       render 'shared/status.json'
-      else
+    else
       format.json { render json: @swyp_in.errors, status: :unprocessable_entity }
     end
     

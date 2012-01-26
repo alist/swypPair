@@ -8,6 +8,7 @@ one:
   port: 1
   id: MyString
   publicKey: 
+  api_key: MyString
 
 two:
   when: 2011-12-27 14:29:07
@@ -17,3 +18,4 @@ two:
   port: 1
   id: MyString
   publicKey: 
+  api_key: MyString
